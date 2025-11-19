@@ -1,0 +1,158 @@
+:root {
+    --background-color: #28282B;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: --background-color;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #00ff55;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #00ff55;
+}
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    left: 0;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #00ff55;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #00ff55;
+}
+
+.block {
+    padding: 60px;
+}
+
+.about-block {
+    background: #0f0f0f;
+}
+
+.models-block {
+    background: #031d0f;
+}
+
+.tech-block {
+    background: #001e0f;
+}
+
+.service-block {
+    background: #0a0a0a;
+}
+
+.contacts-block {
+    background: #1a1a1a;
+}
+
+.product-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #111;
+    border: 2px solid #00ff55;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ff55;
+}
+
+.about-grid,
+.service-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-card,
+.service-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #00ff55;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
